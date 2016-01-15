@@ -10,10 +10,10 @@ public class Accountant extends Employee {
 	public void countSalary(List<Employee> xallEmployee){
 		
 		int sumOfsalaries = 0;
-		for (int i=0; i<xallEmployee.size(); i++){
+		for (Employee xEmployee : xallEmployee){
 			
-			sumOfsalaries = sumOfsalaries + xallEmployee.get(i).getSalary();
-			System.out.println("Pracownicy "+ xallEmployee.get(i).getName());
+			sumOfsalaries = sumOfsalaries + xEmployee.getSalary();
+			System.out.println("Pracownik: "+ xEmployee.getName());
 		}
 		System.out.println("Suma zarobków w firmie to   : "+ sumOfsalaries);
 		
