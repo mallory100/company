@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Accountant extends Employee {
 
@@ -6,8 +7,18 @@ public class Accountant extends Employee {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public int countSalary(Employee xemployee){
-		return xemployee.getSalary();
+	public void countSalary(List<Employee> xallEmployee){
+		
+		int sumOfsalaries = 0;
+		for (int i=0; i<xallEmployee.size(); i++){
+			
+			sumOfsalaries = sumOfsalaries + xallEmployee.get(i).getSalary();
+			System.out.println("Pracownicy "+ xallEmployee.get(i).getName());
+		}
+		System.out.println("Suma zarobków w firmie to   : "+ sumOfsalaries);
+		
+		
+		
 		
 		
 	}

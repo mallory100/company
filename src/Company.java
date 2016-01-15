@@ -18,14 +18,18 @@ public class Company {
 		allEmployees.add(1, new Developer("Jan Kowalski", 6000));
 		allEmployees.add(2, new Developer("Jerzy Kwiatkowski", 10000));
 		
-		int sumOfsalaries = 0;
-		for (int i=0; i<allEmployees.size(); i++){
+		
+
+		Accountant accountant1 = (Accountant) allEmployees.get(0);
+		accountant1.countSalary(allEmployees);
 			
-			sumOfsalaries = sumOfsalaries + allEmployees.get(i).getSalary();
+	
+	
+		
 		}
-		System.out.println(sumOfsalaries);
+
 		
 	
 	}
 
-}
+
