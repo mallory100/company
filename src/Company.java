@@ -21,9 +21,9 @@ public class Company {
 		
 
 		Accountant accountant1 = (Accountant) allEmployees.get(0);
-		accountant1.countSalary(allEmployees);
+		
 			
-	
+		System.out.println("Suma zarobków w firmie to   : "+ accountant1.countSalary(allEmployees));
 	
 		
 		}
